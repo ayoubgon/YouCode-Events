@@ -33,34 +33,29 @@
 
 
 
-.bg_page {background-color : var(--bg-page)};
-.bg_surface {background-color : var(--bg-surface)};
-.bg_muted {background-color : var(--bg-muted)};
-.bg_inverse { background-color : var(--bg-inverse)};
-.bg_primary_soft { background-color : var(--primary-soft)};
-.bg_secondary_soft { background-color : var(--secondary-soft)};
-.bg_primary{ background-color: var(--primary)};
+.bg_page {background-color : var(--bg-page);}
+.bg_surface {background-color : var(--bg-surface);}
+.bg_muted {background-color : var(--bg-muted);}
+.bg_inverse { background-color : var(--bg-inverse);}
+.bg_primary_soft { background-color : var(--primary-soft);}
+.bg_secondary_soft { background-color : var(--secondary-soft);}
+.bg_primary{ background-color: var(--primary)}
 
-body{
-  background-color: #15803D;
+
+
+.button_primary{
+  background-color : var(--primary) ;
+  color : var(--on-dark);
 }
-
-.button_primary  {
-background-color : var(--primary) ;
-color : var(--on-dark);
+.btn{
+padding:10px;
+border-radius : 8px;
+border : 3px solid black;
 }
- .button{
-  padding:1%;
-  border-radius : 8px;
-  border : 3px solid;
-} 
-
-
 .button_outline  {
 background : var(--bg-surface);
 border-color : var(--primary);
 }
-
 
 
 .badge{
@@ -238,17 +233,3 @@ padding : 10px;
 select{
 padding : 10px;
 }
-
-
-.flex_row {
-  display: flex;
-  flex-direction: row;
-}
-
-.align_items_centre {
-  align-items: center;
-}
-.justify_content_ar{
-  justify-content: space-around;
-}
-
