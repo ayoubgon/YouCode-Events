@@ -45,16 +45,17 @@
 
 .button_primary{
   background-color : var(--primary) ;
-  color : var(--on-dark);
+  color : var(--text-on-dark);
 }
 .btn{
 padding:10px;
 border-radius : 8px;
-border : 3px solid black;
+border : 3px solid ;
 }
 .button_outline  {
 background : var(--bg-surface);
 border-color : var(--primary);
+color: var(--primary);
 }
 
 
@@ -164,8 +165,10 @@ input:focus{
 
 
 .card_event{
-	border : 1 solid var(--border-default);
+	border : 1px solid var(--border-default);
 	border-radius : 7px;
+  width: 343px;
+  height: 414px;
 	text-shadow : 0px 4px 16px #1C191714;
 }
 
@@ -232,4 +235,9 @@ padding : 10px;
     
 select{
 padding : 10px;
+}
+
+
+.a_style{
+  text-decoration: none;
 }

@@ -3,64 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Structure YouCode</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- Header & Nav -->
-    <header>
-        <h3>YouCode <span>Events</span></h3>
+    <header class="bg_surface">
+        <h3>YouCode <span class="color_primary">Events</span></h3>
 
-        <nav>    
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants</a></li>
-                <li><a href="#">S'inscrire</a></li>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars"></i>
+        <button id="hamburgerBtn" ></button>
     </header>
 
-    <section class="hero">
-            <h2>Événements</h2>
-            <p>Retrouvez les ateliers, conférences, hackathons et rencontres à venir, puis inscrivez-vous à ceux qui vous intéressent.</p>
+    <section class="bg_primary_soft">
+            <h1 class="heading_h1 text_primary">Événements</h1>
+            <p  class="body_lg text_secondary">Retrouvez les ateliers, conférences, hackathons et rencontres à venir, puis inscrivez-vous à ceux qui vous intéressent.</p>
     </section>
 
     <section class="main-actions">
-        <h2>À venir</h2>
-        <p>6 événements</p>
+        <h2 class="heading_h2">À venir</h2>
+        <p >6 événements</p>
         <div>
             <article class="">
                 <img src="event1.jpg" alt="Event">
-                <details>
+                <div>
                     <p>Atelier</p>
                     <h4>Atelier Flexbox et CSS Grid</h4>
                     <p>12 nov. 2026 · 14h00</p>
                     <p>Salle Turing, YouCode Safi</p>
                     <a href="#">Voir le détail</a>   
-                </details>
-                
+                </div>
             </article>
             <article class="">
                 <img src="event2.jpg" alt="Event">
-                <details>
+                <div>
                     <p>Conférence</p>
                     <h4>Accessibilité Web : par où commencer ?</h4>
                     <p>19 nov. 2026 · 10h00</p>
                     <p>Amphithéâtre, YouCode Youssoufia</p>
                     <a href="#">Voir le détail</a>    
-                </details>
+                </div>
                 
             </article>
             <article class="">
                 <img src="event3.jpg" alt="Event">
-                <details>
+                <div>
                     <p>Hackathon</p>
                     <h4>Hackathon Green Code</h4>
                     <p>28 et 29 nov. 2026</p>
                     <p>Campus YouCode Safi</p>
                     <a href="#">Voir le détail</a>    
-                </details>
+                </div>
+            </article>    
+            <article class="">
+                <img src="event3.jpg" alt="Event">
+                <div>
+                    <p>Rencontre</p>
+                    <h4>Rencontre avec des développeurs front-end</h4>
+                    <p>3 déc. 2026 · 16h00</p>
+                    <p>Espace Lovelace, YouCode Nador</p>
+                    <a href="#">Voir le détail</a>    
+                </div>
+            </article>    
+            <article class="">
+                <img src="event3.jpg" alt="Event">
+                <div>
+                    <p>Atelier</p>
+                    <h4>Atelier Git Flow en pratique</h4>
+                    <p>10 déc. 2026 · 14h00</p>
+                    <p>Salle Hopper, YouCode Safi</p>
+                    <a href="#">Voir le détail</a>    
+                </div>
+            </article>    
+            <article class="">
+                <img src="event3.jpg" alt="Event">
+                <div>
+                    <p>Conférence</p>
+                    <h4>Du design au code : travailler avec Figma</h4>
+                    <p>17 déc. 2026 · 10h00</p>
+                    <p>Amphithéâtre, YouCode Youssoufia</p>
+                    <a href="#">Voir le détail</a>    
+                </div>
             </article>    
         </div>
         
