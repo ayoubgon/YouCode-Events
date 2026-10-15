@@ -16,7 +16,12 @@
 --success : #15803D;
 --error : #B91C1C;
 }
-
+body{
+    margin:0px;
+    padding:0px;
+    background-color: var(--bg-page);
+    font-family: "DM Sans", sans-serif;
+}
 
 .border_default{
   border: 1px solid var(--border-default);
@@ -185,46 +190,37 @@ input:focus{
 
 
 .card_catégorie{
-      padding:10px;
       height: 168px;
       width: 282px;
       border-radius: 10px;
-      text-align: start;
+      text-align: center;
       padding-top: 25px;
-      padding-left: 25px;
+      text-align:start;
+      padding-left: 20px;
+      margin-bottom:  10px ;
 }
 
 
 .stat{
-background-color : var(--primary);
-color : on-dark;
-padding : 10px;
+  background-color : var(--primary);
+  color : var(--text-on-dark);
+  padding : 10px;
 }
 
 
 
 .card_intervenant{
       border: 1px solid black;
-      padding: 20px;
+      padding: 40px;
+      margin-bottom: 20px;
       border-radius: 10px;
       width: 360px;
       height: 260px;
     }
 
 
-
-.partenaire{
-      border: 1px solid black;
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      width: 218px;
-      text-align: center;
-      justify-content: space-evenly;
-      
-    }
     .logo_partenaire{
-      background-color: aqua;
+      background-color: var(--text-secondary);
       height: 24px;
       width: 24px;
       border-radius: 8px;
@@ -241,3 +237,20 @@ padding : 10px;
 .a_style{
   text-decoration: none;
 }
+
+/* }
+
+
+footer{
+  padding: 50px;
+}
+footer > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_liens{
+  display: flex;
+  flex-direction: column;
+}
+ */
