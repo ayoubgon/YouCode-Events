@@ -50,16 +50,17 @@ body{
 
 .button_primary{
   background-color : var(--primary) ;
-  color : var(--on-dark);
+  color : var(--text-on-dark);
 }
 .btn{
 padding:10px;
 border-radius : 8px;
-border : 3px solid black;
+border : 3px solid ;
 }
 .button_outline  {
 background : var(--bg-surface);
 border-color : var(--primary);
+color: var(--primary);
 }
 
 
@@ -169,7 +170,9 @@ input:focus{
 
 
 .card_event{
-	border : 1 solid var(--border-default);
+	border : 1px solid var(--border-default);
+  width: 343px;
+  height: auto;
 	border-radius : 7px;
 	text-shadow : 0px 4px 16px #1C191714;
 }
@@ -187,46 +190,37 @@ input:focus{
 
 
 .card_catégorie{
-      padding:10px;
       height: 168px;
       width: 282px;
       border-radius: 10px;
-      text-align: start;
+      text-align: center;
       padding-top: 25px;
-      padding-left: 25px;
+      text-align:start;
+      padding-left: 20px;
+      margin-bottom:  10px ;
 }
 
 
 .stat{
-background-color : var(--primary);
-color : on-dark;
-padding : 10px;
+  background-color : var(--primary);
+  color : var(--text-on-dark);
+  padding : 10px;
 }
 
 
 
 .card_intervenant{
       border: 1px solid black;
-      padding: 20px;
+      padding: 40px;
+      margin-bottom: 20px;
       border-radius: 10px;
       width: 360px;
       height: 260px;
     }
 
 
-
-.partenaire{
-      border: 1px solid black;
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      width: 218px;
-      text-align: center;
-      justify-content: space-evenly;
-      
-    }
     .logo_partenaire{
-      background-color: aqua;
+      background-color: var(--text-secondary);
       height: 24px;
       width: 24px;
       border-radius: 8px;
@@ -237,4 +231,30 @@ padding : 10px;
     
 select{
 padding : 10px;
+}
+
+
+.a_style{
+  text-decoration: none;
+}
+
+
+footer{
+  padding: 50px;
+}
+footer > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_liens{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
 }
