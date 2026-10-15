@@ -1,4 +1,4 @@
-footer{
+/* footer{
     margin:0px;
     padding:10px 40px ;
     
@@ -15,4 +15,17 @@ footer a{
     font-size: 16px;
     margin-top: 10px;
     display: block;
+} */
+
+footer{
+  padding: 50px;
+}
+footer > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_liens{
+  display: flex;
+  flex-direction: column;
 }

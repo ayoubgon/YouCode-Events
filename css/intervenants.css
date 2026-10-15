@@ -1,4 +1,4 @@
-.hero , .main-actions {
+.hero {
     padding:30px;
 }
 
@@ -19,3 +19,9 @@
       justify-content: space-evenly;
       
     }
+.main-actions{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}

@@ -239,7 +239,7 @@ padding : 10px;
 }
 
 
-footer{
+/* footer{
   padding: 50px;
 }
 footer > div{
@@ -250,7 +250,7 @@ footer > div{
 .footer_liens{
   display: flex;
   flex-direction: column;
-}
+} */
 
 header{
   display: flex;

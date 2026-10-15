@@ -1,0 +1,39 @@
+@media (min-width : 768px){
+
+ .hero >article >div {
+    flex-direction: row;
+ }  
+ .evenements{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.stats{
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-rows: 1fr;
+}
+.catégories{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 1024px){
+    .hero{
+        flex-direction: row;
+    }
+    .evenements{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .catégories{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+    footer > div{
+        flex-direction: row;
+    }
+
+
+}

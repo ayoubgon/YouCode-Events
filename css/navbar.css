@@ -22,7 +22,7 @@ header{
     background-color: var(--surface);
 }
 #nav_links ul li a{
-    display: block;
+    /* display: block; */
     text-decoration: none;
     display: flex;
     align-items: center;
