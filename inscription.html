@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Structure YouCode</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inscription.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
+
 <body>
 
-    <!-- Header & Nav -->
-        <header>
-        <h3>YouCode <span>Events</span></h3>
+    <header class="bg_surface">
+        <h3 class="heading_h3 text_primary">YouCode <span class="heading_h3 color_primary">Events</span></h3>
 
-        <nav>    
+        <nav id="nav_links">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><button href="inscription.html" class="btn button_primary text_on_dark">S'inscrire</button></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars"></i>
+        <button id="menu_btn">&#9776;</button>
     </header>
 
-    <section class="hero">
-            <h2>Inscription</h2>
-            <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
+    <section class="main_insci bg_primary_soft">
+        <h2>Inscription</h2>
+        <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.
+        </p>
     </section>
-    <section>
-        <h3>Vos informations</h3>
-        <p>Les champs marqués * sont obligatoires.</p>
-        <div>
+    <div class="form-titale">
+        <h2 class="heading_h2">Vos informations</h2>
+        <p class="body-sm">Les champs marqués * sont obligatoires.</p>
+    </div>
+    <section class="main-actions">
+        <div class="form-group">
             <div>
-                <p>Nom *</p>
+                <p class="label-sm">Nom *</p>
                 <input type="text" placeholder="Votre nom">
             </div>
             <div>
-                <p>Prénom *</p>
+                <p class="label-sm">Prénom *</p>
                 <input type="text" placeholder="Votre prenom"> <br>
             </div>
         </div>
-        <div>
+        <div class="form-group">
             <div>
-                <p>Adresse e-mail *</p>
+                <p class="label-sm">Adresse e-mail *</p>
                 <input type="text" placeholder="Entrez votre e-mail">
             </div>
             <div>
-                <p>Téléphone</p>
+                <p class="label-sm">Téléphone</p>
                 <input type="text" placeholder="0XXXXXXXXX"><br>
             </div>
         </div>
-        
-        <p>Événement choisi *</p>
-        <select name="" >
-            <option value="">Choisir un événement</option>
-            <option value="">Choisir un événement</option>
-            <option value="">Choisir un événement</option>
-            <option value="">Choisir un événement</option>
-        </select>
+        <div class="checkbox">
+            <p>Événement choisi *</p>
+            <select name="">
+                <option value="">Choisir un événement</option>
+                <option value="">Choisir un événement</option>
+                <option value="">Choisir un événement</option>
+                <option value="">Choisir un événement</option>
+            </select>
+        </div>
+        <div class="Niveau">
+            <p>Niveau *</p>
+            <article>
+                <label for="">
+                    <input type="radio" name="Niveau">
+                    <span>Débutant</span>
+                </label>
+                <label for="">
+                    <input type="radio" name="Niveau">
+                    <span>Intermédiaire</span>
+                </label>
+                <label for="">
+                    <input type="radio" name="Niveau">
+                    <span>Avancé</span>
+                </label>
+            </article>
+        </div>
+        <div class="Message"> 
+            <p>Message (facultatif)</p>
+            <input type="text" placeholder="Vos attentes, vos questions…">
+        </div>
 
-        <p>Niveau *</p>
-        <article>
-            <label for="">
-                <input type="radio" name="Débutant">
-                <span>Débutant</span>
-            </label>
-            <label for="">
-                <input type="radio" name="Intermédiaire">
-                <span>Intermédiaire</span>
-            </label>
-            <label for="">
-                <input type="radio" name="Avancé">
-                <span>Avancé</span>
-            </label>
-        </article>
-        <p>Message (facultatif)</p>
-        <textarea name="" ></textarea>
-        <input type="text" placeholder="Vos attentes, vos questions…">
-        
         <label for="">
             <input type="checkbox" placeholder="Enter your name">
             <span>J'accepte que mes données servent à gérer mon inscription. *</span>
@@ -90,7 +99,8 @@
         <div class="footer-content">
             <div>
                 <h3 class="heading_h3">[YouCode]</h3>
-                <p class="body_sm">Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
+                <p class="body_sm">Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même
+                    endroit.</p>
             </div>
             <div>
                 <h4 class="label_sm ">Navigation</h4>
@@ -105,11 +115,26 @@
                 <p class="body_sm">Youssoufia · Safi · Nador</p>
             </div>
         </div>
-            <hr>
-            <div>
-                <p class="body_sm">© 2026 YouCode Events — site fictif réalisé en formation.</p>
-            </div>
+        <hr>
+        <div>
+            <p>© 2026 YouCode Events — site fictif réalisé en formation.</p>
+        </div>
     </footer>
+    <script>
+        const menuBtn = document.getElementById('menu_btn');
+        const navLinks = document.getElementById('nav_links');
+        const link = document.getElementById('nav_links a');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
+
 </html>
