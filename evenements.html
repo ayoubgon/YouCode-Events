@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Structure YouCode</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
+
 <body>
 
-    <!-- Header & Nav -->
-    <header>
-        <h3>YouCode <span>Events</span></h3>
+    <header class="bg_surface">
+        <h3 class="heading_h3 text_primary">YouCode <span class="heading_h3 color_primary">Events</span></h3>
 
-        <nav>    
+        <nav id="nav_links">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><button href="inscription.html" class="btn button_primary text_on_dark">S'inscrire</button></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars"></i>
+        <button id="menu_btn">&#9776;</button>
     </header>
 
     <section class="hero">
-            <h2>Événements</h2>
-            <p>Retrouvez les ateliers, conférences, hackathons et rencontres à venir, puis inscrivez-vous à ceux qui vous intéressent.</p>
+        <h2>Événements</h2>
+        <p>Retrouvez les ateliers, conférences, hackathons et rencontres à venir, puis inscrivez-vous à ceux qui vous
+            intéressent.</p>
     </section>
 
     <section class="main-actions">
@@ -37,9 +41,9 @@
                     <h4>Atelier Flexbox et CSS Grid</h4>
                     <p>12 nov. 2026 · 14h00</p>
                     <p>Salle Turing, YouCode Safi</p>
-                    <a href="#">Voir le détail</a>   
+                    <a href="#">Voir le détail</a>
                 </details>
-                
+
             </article>
             <article class="">
                 <img src="event2.jpg" alt="Event">
@@ -48,9 +52,9 @@
                     <h4>Accessibilité Web : par où commencer ?</h4>
                     <p>19 nov. 2026 · 10h00</p>
                     <p>Amphithéâtre, YouCode Youssoufia</p>
-                    <a href="#">Voir le détail</a>    
+                    <a href="#">Voir le détail</a>
                 </details>
-                
+
             </article>
             <article class="">
                 <img src="event3.jpg" alt="Event">
@@ -59,11 +63,11 @@
                     <h4>Hackathon Green Code</h4>
                     <p>28 et 29 nov. 2026</p>
                     <p>Campus YouCode Safi</p>
-                    <a href="#">Voir le détail</a>    
+                    <a href="#">Voir le détail</a>
                 </details>
-            </article>    
+            </article>
         </div>
-        
+
     </section>
 
     <!-- Footer -->
@@ -87,11 +91,26 @@
                 <p>Youssoufia · Safi · Nador</p>
             </div>
         </div>
-            <hr>
-            <div>
-                <p>© 2026 YouCode Events — site fictif réalisé en formation.</p>
-            </div>
+        <hr>
+        <div>
+            <p>© 2026 YouCode Events — site fictif réalisé en formation.</p>
+        </div>
     </footer>
+    <script>
+        const menuBtn = document.getElementById('menu_btn');
+        const navLinks = document.getElementById('nav_links');
+        const link = document.getElementById('nav_links a');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
+
 </html>
