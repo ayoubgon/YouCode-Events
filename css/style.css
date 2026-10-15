@@ -171,9 +171,9 @@ input:focus{
 
 .card_event{
 	border : 1px solid var(--border-default);
-  width: 343px;
-  height: auto;
 	border-radius : 7px;
+  width: 343px;
+  height: 414px;
 	text-shadow : 0px 4px 16px #1C191714;
 }
 
@@ -238,6 +238,8 @@ padding : 10px;
   text-decoration: none;
 }
 
+/* }
+
 
 footer{
   padding: 50px;
@@ -251,10 +253,4 @@ footer > div{
   display: flex;
   flex-direction: column;
 }
-
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: fit-content;
-}
+ */
