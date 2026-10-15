@@ -8,22 +8,25 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
 </head>
 <body>
 
     <!-- Header & Nav -->
     <header class="bg_surface">
-        <h3>YouCode <span class="color_primary">Events</span></h3>
+        <h3 class="heading_h3 text_primary">YouCode <span class="heading_h3 color_primary">Events</span></h3>
 
-        <!-- <nav>    
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants</a></li>
-                <li><a href="#">S'inscrire</a></li>
+        <nav id ="nav_links">    
+            <ul >
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><button href="inscription.html" class="btn button_primary text_on_dark">S'inscrire</button></li>
             </ul>
-        </nav> -->
-        <i class="fa-solid fa-bars"></i>
+        </nav>
+        <button id="menu_btn" >&#9776;</button>
     </header>
 
     <!-- Hero Section -->
@@ -134,18 +137,17 @@
 
     <!-- Footer -->
     <footer class="bg_inverse text_on_dark">
-        <div>
-
+        <div class="footer-content">
             <div>
                 <h3 class="heading_h3">[YouCode]</h3>
                 <p class="body_sm">Les ateliers, conférences, hackathons et rencontres de YouCode, réunis au même endroit.</p>
             </div>
             <div class="footer_liens">
                 <h4 class="label_sm">Navigation</h4>
-                <a href="#" class="body_sm a_style text_on_dark">Accueil</a>
-                <a href="#" class="body_sm a_style text_on_dark">Événements</a>
-                <a href="#" class="body_sm a_style text_on_dark">Intervenants et partenaires</a>
-                <a href="#" class="body_sm a_style text_on_dark">Inscription</a>
+                <a href="index.html" class="body_sm a_style text_on_dark">Accueil</a>
+                <a href="evenements.html" class="body_sm a_style text_on_dark">Événements</a>
+                <a href="intervenants.html" class="body_sm a_style text_on_dark">Intervenants et partenaires</a>
+                <a href="inscription.html" class="body_sm a_style text_on_dark">Inscription</a>
             </div>
             <div>
                 <h4 class="label_sm">Contact</h4>
@@ -158,6 +160,19 @@
                 <p class="body_sm">© 2026 YouCode Events — site fictif réalisé en formation.</p>
             </div>
     </footer>
+    <script >
+        const menuBtn = document.getElementById('menu_btn');
+        const navLinks = document.getElementById('nav_links');
+        const link = document.getElementById('nav_links a');
 
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

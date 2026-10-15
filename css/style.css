@@ -16,7 +16,12 @@
 --success : #15803D;
 --error : #B91C1C;
 }
-
+body{
+    margin:0px;
+    padding:0px;
+    background-color: var(--bg-page);
+    font-family: "DM Sans", sans-serif;
+}
 
 .border_default{
   border: 1px solid var(--border-default);
