@@ -1,0 +1,65 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.main_insci{
+    padding: 5px 20px;
+}
+.main-actions{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form-titale{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-group div input{
+    border-radius: 5px;
+    border: 1px solid var(--text-primary);
+    width: 340px;
+    height: 20px;
+}
+.main-actions select{
+    display: block;
+    border-radius: 5px;
+    width: 320px;
+    border: 1px solid var(--text-primary);
+} 
+
+.Niveau{
+    width: 310px;
+}
+.Message{
+    width: 310px;
+    
+}
+.Message input{
+    border-radius: 5px;
+    border: 1px solid var(--text-primary);
+    width: 300px;
+    height: 100px;
+}
+.checkbox{
+    width: 310px;
+}
+.main-actions button{
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--on-primary);
+    font-size: 20px;
+}
