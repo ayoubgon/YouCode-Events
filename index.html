@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Structure YouCode</title>
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav_bar.css">
-<!--     <link rel="stylesheet" href="javascript/js.js"> -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/nav_bar.css"> -->
+    <!-- <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="css/import.css">
 
 </head>
 <body>
@@ -26,9 +26,10 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="evenements.html">Événements</a></li>
                 <li><a href="intervenants.html">Intervenants</a></li>
-                <li><button href="inscription.html" class="btn button_primary text_on_dark">S'inscrire</button></li>
+                <li class="ins_button"><a href="inscription.html" class="button_nav_respan inscrition_list_button btn button_primary text_on_dark">S'inscrire</a></li>
             </ul>
         </nav>
+        <a href="inscription.html" class=" button_nav_respan btn button_primary text_on_dark">S'inscrire</a>
         <button id="menu_btn" >&#9776;</button>
     </header>
 
@@ -50,7 +51,7 @@
     </section>
 
     <!-- Section: Actions (3 Cards) -->
-    <section class="evenements">
+    <section class="main-actions">
         <div>
             <h2 class="heading_h2">Prochains événements</h2>
             <a href="#" class="label_base a_style color_primary">Tous les événements </a>

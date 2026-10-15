@@ -1,6 +1,9 @@
 header{
+    margin-left: 20px ;
+    margin-right: 20px ;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
 
 }
@@ -10,8 +13,16 @@ header{
     border: none;
     font-size: 25px;
     cursor: pointer;
+}
+.button_nav_respan{
+    display: none;
+}
+.button_nav_respan:hover{
+        background-color: var(--primary-hover);
+}
 
-
+.inscrition_list_button{
+    display: block;
 }
 #nav_links{
     display: none;
@@ -45,6 +56,24 @@ header{
     padding: 10px;
     background-color: var(--primary-soft);
 }
+.ins_button{
+    display: flex;
+    justify-content: center;
+}
+#nav_links ul .inscrition_list_button{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border: none;
+    color: var(--text-on-dark);
+    margin: 10px;
+    width: 30%;
+}
+#nav_links ul .inscrition_list_button:hover{
+    color: var(--text-on-dark);
+}
+
+
 #nav_links ul li a:hover{
     color: var(--primary);
 }

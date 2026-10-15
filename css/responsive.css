@@ -1,37 +1,100 @@
-@media (min-width : 768px){
+@media (min-width : 768px) {
 
- .hero >article >div {
-    flex-direction: row;
- }  
- .evenements{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-.stats{
-  grid-template-columns: repeat(4 , 1fr);
-  grid-template-rows: 1fr;
-}
-.catégories{
-   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-}
+    #menu_btn {
+        display: none;
+    }
 
-@media (min-width: 1024px){
-    .hero{
+    .inscrition_list_button {
+        display: none;
+    }
+
+    .button_nav_respan {
+        display: flex;
+        width: 100px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .button_nav_respan:hover {
+        background-color: var(--primary-hover);
+    }
+
+
+    #nav_links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        background-color: transparent;
+        gap: 20px;
+
+    }
+
+    #nav_links ul {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav_links ul li a {
+        font-size: 18px;
+        color: var(--on-surface);
+        background-color: transparent;
+        text-decoration: none;
+        padding: 5px 10px;
+        border: none;
+    }
+
+
+
+    .hero>article>div {
         flex-direction: row;
     }
-    .evenements{
+
+    .evenements {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .catégories {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-content{
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .evenements {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
     }
-    .catégories{
+
+    .catégories {
         display: grid;
-        grid-template-columns: repeat(4 , 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-    footer > div{
+
+    footer>div {
         flex-direction: row;
     }
 
