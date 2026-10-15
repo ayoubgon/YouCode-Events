@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navMenu{
+    display: none;
+    background-color: aquamarine;
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+
+}
+#hamburgerBtn{
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+#navMenu.active{
+    display: flex !important;
+}
+
