@@ -35,31 +35,35 @@ body{
 .main-actions select{
     display: block;
     border-radius: 5px;
-    width: 320px;
+    width: 360px;
     border: 1px solid var(--text-primary);
 } 
 
 .Niveau{
-    width: 310px;
+    width: 360px;
 }
 .Message{
-    width: 310px;
+    width: 360px;
     
 }
 .Message input{
     border-radius: 5px;
     border: 1px solid var(--text-primary);
-    width: 300px;
+    width: 360px;
     height: 100px;
 }
 .checkbox{
-    width: 310px;
+    width: 360px;
 }
 .main-actions button{
-    width: 320px;
-    height: 40px;
+    border: none;
+    width: 360px;
+    height: 50px;
+    color : #FFFFFF;
     border-radius: 5px;
     background-color: var(--primary);
-    color: var(--on-primary);
     font-size: 20px;
+}
+.main-actions button:hover{
+    background-color: var(--primary-hover);
 }
