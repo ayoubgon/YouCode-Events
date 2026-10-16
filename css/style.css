@@ -170,10 +170,12 @@ input:focus{
 
 
 .card_event{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 	border : 1px solid var(--border-default);
 	border-radius : 7px;
-  width: 343px;
-  height: 414px;
+  /* width: 343px; */
 	text-shadow : 0px 4px 16px #1C191714;
 }
 
@@ -214,7 +216,7 @@ input:focus{
       padding: 40px;
       margin-bottom: 20px;
       border-radius: 10px;
-      width: 360px;
+      width: 260px;
       height: 260px;
     }
 
@@ -236,24 +238,9 @@ padding : 10px;
 
 .a_style{
   text-decoration: none;
-}
+} 
 
 .hero {
     padding:30px;
 }
-/* }
 
-
-footer{
-  padding: 50px;
-}
-footer > div{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer_liens{
-  display: flex;
-  flex-direction: column;
-}
- */

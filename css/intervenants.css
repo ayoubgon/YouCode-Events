@@ -1,11 +1,10 @@
-.hero , .main-actions {
+.hero {
     padding:30px;
 }
 
 .partenaires{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 10px; */
     margin-bottom: 10px ;
 }
 .partenaire{
@@ -14,8 +13,18 @@
       padding: 20px;
       margin: 10px;
       display: flex;
-      text-align: center;
+      justify-content: center;
       align-items: center;
-      justify-content: space-evenly;
-      
+      gap: 10px;
     }
+.partenaires{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.intervenants{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* background-color: blue; */
+}
+

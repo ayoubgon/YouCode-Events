@@ -2,27 +2,36 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structure YouCode</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/intervenants.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intervenants.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="css/import.css">
+
+
+
+
 </head>
 <body>
 
     <header class="bg_surface">
-        <h3 class="heading_h3 text_primary">YouCode <span class=" color_primary">Events</span></h3>
+        <h3 class="heading_h3 text_primary">YouCode <span class="heading_h3 color_primary">Events</span></h3>
 
-        <nav id="nav_links">
-            <ul>
+        <nav id ="nav_links">    
+            <ul >
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="evenements.html">Événements</a></li>
                 <li><a href="intervenants.html">Intervenants</a></li>
-                <li><button href="inscription.html" class="btn button_primary text_on_dark">S'inscrire</button></li>
+                <li class="ins_button"><a href="inscription.html" class="button_nav_respan inscrition_list_button btn button_primary text_on_dark">S'inscrire</a></li>
             </ul>
         </nav>
-        <button id="menu_btn">&#9776;</button>
+        <a href="inscription.html" class=" button_nav_respan btn button_primary text_on_dark">S'inscrire</a>
+        <button id="menu_btn" >&#9776;</button>
     </header>
 
     <section class="hero bg_primary_soft">
@@ -30,9 +39,9 @@
             <p class="body_lg">Les professionnels qui animent les événements YouCode et les entreprises qui les soutiennent.</p>
     </section>
 
-    <section class="main-actions">
+    <section >
         <h2 class="heading_h2">Intervenantss</h2>
-        <div>
+        <div class="intervenants">
             <article class="card_intervenant">
                 <img src="assets/images/intervenante.png" alt="Event">
                 <h4 class="heading_h3">Salma Bennani</h4>
@@ -40,7 +49,7 @@
                 <p class="body_sm">Spécialiste de l'accessibilité, elle anime la conférence Accessibilité Web.</p>
             </article>
             <article class="card_intervenant">
-                <img src="assets/images/intervenante.png" alt="Event">
+                <img src="assets/images/intervenant.png" alt="Event">
                 <h4 class="heading_h3">Youssef Amrani</h4>
                 <p class="label_sm color_primary">Designer UI</p>
                 <p class="body_sm">Construit des Design Systems et anime la conférence Du design au code.</p>
@@ -52,7 +61,7 @@
                 <p class="body_sm">Mentore du Hackathon Green Code, attentive à l'éco-conception.</p>
             </article>
             <article class="card_intervenant">
-                <img src="assets/images/intervenante.png" alt="Event">
+                <img src="assets/images/intervenant.png" alt="Event">
                 <h4 class="heading_h3">Karim Ouazzani</h4>
                 <p class="label_sm color_primary">Lead développeur</p>
                 <p class="body_sm">Accompagne les équipes sur Git Flow et la revue de code.</p>
@@ -64,7 +73,7 @@
                 <p class="body_sm">Organise les rencontres entre apprenants et professionnels.</p>
             </article>
             <article class="card_intervenant">
-                <img src="assets/images/intervenante.png" alt="Event">
+                <img src="assets/images/intervenant.png" alt="Event">
                 <h4 class="heading_h3">Omar Chraibi</h4>
                 <p class="label_sm color_primary">Intégrateur web</p>
                 <p class="body_sm">Anime l'atelier Flexbox et CSS Grid.</p>
