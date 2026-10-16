@@ -152,6 +152,12 @@
     footer>div {
         flex-direction: row;
     }
+    .intervenants{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .partenaires{
+        grid-template-columns: repeat(4,1fr);
+    }
 
 
 }
