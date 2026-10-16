@@ -1,11 +1,13 @@
-body{
-    margin:0px;
-    padding:0px;
-}
-.main_insci{
+/* body {
+    margin: 0px;
+    padding: 0px;
+} */
+
+.main_insci {
     padding: 5px 20px;
 }
-.main-actions{
+
+.main-actions {
     padding: 5px 30px;
     display: flex;
     flex-direction: column;
@@ -14,58 +16,83 @@ body{
     align-items: center;
     gap: 10px;
 }
-.form-titale{
+
+.form-titale {
     padding: 5px 30px;
     display: flex;
     flex-direction: column;
 
 }
-.form-group{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.form-group {
     gap: 20px;
 }
-.form-group div input{
+
+.form-group div input {
     border-radius: 5px;
     border: 1px solid var(--text-primary);
     width: 340px;
     height: 20px;
 }
-.main-actions select{
+
+.main-actions select {
     display: block;
     border-radius: 5px;
     width: 360px;
     border: 1px solid var(--text-primary);
-} 
+}
 
-.Niveau{
-    width: 360px;
+.Niveau {
+    width: 100%;
+    max-width: 360px;
 }
-.Message{
-    width: 360px;
-    
+
+.Niveau section {
+    display: flex;
+    flex-direction: column;
+
 }
-.Message input{
+
+.Message {
+    max-width: 360px;
+
+}
+
+.Message input {
     border-radius: 5px;
     border: 1px solid var(--text-primary);
     width: 360px;
     height: 100px;
 }
-.checkbox{
+
+.checkbox select {
     width: 360px;
 }
-.main-actions button{
+
+.check_mark {
+    max-width: 360px;
+}
+
+.info_insc {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #FFFFFF;
+    margin: 40px 20px;
+    border-radius: 7px;
+}
+
+.main-actions button {
     margin-top: 10px;
     margin-bottom: 10px;
     border: none;
     width: 360px;
     height: 50px;
-    color : #FFFFFF;
+    color: #FFFFFF;
     border-radius: 5px;
     background-color: var(--primary);
     font-size: 20px;
 }
-.main-actions button:hover{
+
+.main-actions button:hover {
     background-color: var(--primary-hover);
 }
