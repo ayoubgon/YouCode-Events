@@ -1,14 +1,7 @@
-/* 1. الساس والمتغيرات (Variables/Global) */
 @import url("style.css");
-
-/* 2. المكونات الأساسية (Components) */
 @import url("navbar.css");
 @import url("footer.css");
-
-/* 3. الصفحات (Pages) */
 @import url("index.css");
 @import url("inscription.css");
 @import url("intervenants.css");
-
-/* 4. التجاوب (Responsive) - ضروري يكون هو آخير واحد */
 @import url("responsive.css");
