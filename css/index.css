@@ -7,11 +7,11 @@
   padding: 5%;
   
 }
-body{
+/* body{
   padding: 0;
   margin: 0;
 
-}
+} */
 .hero figure{
   display: flex;
   padding: 20px;
@@ -32,6 +32,8 @@ body{
 }
 .main-actions{
   padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .evenements{
   display: grid;
