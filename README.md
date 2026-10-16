@@ -197,6 +197,10 @@ Chaque tâche est attribuée à un membre de l'équipe.
 
 ## 🔗 Liens du projet
 
+### 🌐 Site Web — Live Demo
+
+🚀 [le site en ligne](https://ayoubgon.github.io/YouCode-Events/) 
+
 ### GitHub Repository
 
 🔗 [YouCode Events](https://github.com/ayoubgon/YouCode-Events/tree/main)
