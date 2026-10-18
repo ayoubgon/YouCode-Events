@@ -137,6 +137,10 @@
     .hero {
         flex-direction: row;
     }
+    .hero_event_inter{
+        flex-direction: column;
+        padding:30px;
+    }
 
     .evenements {
         display: grid;
